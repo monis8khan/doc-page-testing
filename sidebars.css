@@ -1,0 +1,61 @@
+.main-screen {
+  background-color: rgb(41, 38, 38);
+  color:white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.myBtn{
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: rgb(20, 20, 20);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+}
+
+
+
+.myBtn:hover{
+  color: #141414;
+  border-color: #edeeee;
+  background-color: rgb(231, 231, 231);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+}
+
+.hidden{
+  display: none;
+}
+.border-divider{
+  border: 1px solid #474646;
+  border-top: #474646!important;
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important;
+}
+.my-side-menu{
+  background-color: rgb(241, 238, 238);    
+  padding: 1rem!important;
+  position: sticky!important;
+  flex-shrink: 0!important;
+}
+.sidebar-btn{
+  text-decoration: none!important;
+  font-size: 1.25rem!important;
+  padding-bottom: 1rem!important;
+  margin-bottom: 1rem!important;
+  border: 0!important;
+  display: flex!important;
+  color: #212529!important;
+}
+.my-list-unstyled{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sub-menu{
+  padding-left:2rem ;
+}

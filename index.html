@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="display:flex;">
+        <div class="my-side-menu" style="width: 300px; min-height: 100vh;">
+            <button class="sidebar-btn" id="main_menu_btn" onclick="handleOnClick(event)">
+                Trafix Help Center
+            </button>
+            <div class="border-divider"></div>
+            <ul class="my-list-unstyled">
+                <li>
+                    <button class="sidebar-btn"
+                        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Dashboard
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-4">
+                            <button class="sidebar-btn"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse-sub"
+                                aria-expanded="false">
+                                Sub Dashboard
+                            </button>
+                            <div class="collapse" id="dashboard-collapse-sub">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-4">
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Overview</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="border-divider"></div>
+                <li>
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                        Orders
+                    </button>
+                    <div class="collapse" id="home-collapse">
+                        <ul class="my-list-unstyled sub-menu">
+                            <li><a href="#HowToAddNewOrder" style="text-decoration: none; color: black;" id="order_menu_btn"
+                                    onclick="handleOnClick(event)">How To Add New Order?</a>
+                            </li>
+                            <li><a href="#HowToUpdateAnOrder" style="text-decoration: none; color: black;" id="order_menu_btn"
+                                    onclick="handleOnClick(event)">How To Update An Order?</a>
+                            </li>
+                            <li><a href="#HowToCancelAnOrder" style="text-decoration: none; color: black;" id="order_menu_btn"
+                                    onclick="handleOnClick(event)">How To Cancel An Order?</a>
+                            </li>
+                            <li><a href="#HowToRecreateSameOrder" style="text-decoration: none; color: black;" id="order_menu_btn"
+                                    onclick="handleOnClick(event)">How To Re Create A Same Order?</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">....</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="border-divider"></div>
+                <li>
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Account
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Div for main menu -->
+        <div class="main-screen" id="main_menu">
+            <div>
+                <h1>Welcome To Trafix Help Center</h1>
+                <div><br>
+                    <p>This is the introduction of trafix help center. Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum. <br><br>
+                        This is the introduction of trafix help center. Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum. <br><br><br>
+                    </p>
+                    <ul>
+                        <li>It appears completely unstyled.</li>
+                        <li>Structurally, it's still a list.</li>
+                        <li>However, this style only applies to immediate child elements.</li>
+                        <li>This may still come in handy in some situations.</li>
+                    </ul>
+                    <button type="button" class="myBtn">Custom
+                        button</button>
+                </div>
+            </div>
+        </div>
+        <!-- Div for order menu button-->
+        <div class="main-screen hidden" id="order_menu">
+            <!-- How To Add New Order -->
+            <div id="HowToAddNewOrder">
+                <h1> How To Add New Order?</h1>
+                <div>
+                    <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div>
+                        <button type="button" class="myBtn">Custom
+                            button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-divider"></div>
+            <!-- How To Update An Order -->
+            <div id="HowToUpdateAnOrder">
+                <h1>How To Update An Order?</h1>
+                <div>
+                    <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div>
+                        <button type="button" class="myBtn">Custom
+                            button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-divider"></div>
+            <!-- How To Cancel An Order -->
+            <div id="HowToCancelAnOrder">
+                <h1>How To Cancel An Order?</h1>
+                <div>
+                    <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div>
+                        <button type="button" class="myBtn">Custom
+                            button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-divider"></div>
+            <!-- How To Re Create A Same Order -->
+            <div id="HowToRecreateSameOrder">
+                <h1>How To Re Create A Same Order?</h1>
+                <div>
+                    <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div>
+                        <button type="button" class="myBtn">Custom
+                            button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-divider"></div>
+        </div>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="sidebars.js"></script>
+</body>
+
+</html>
